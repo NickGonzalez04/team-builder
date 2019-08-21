@@ -2,17 +2,16 @@ import React from 'react';
 
 
 const TeamList = props => {
-    console.log(props);
-
+    console.log("team",props);
     return (
    <div className="team-list">
-       {props.teamList.map(member =>{
+       {props.teamMembers.map(member =>{
 
         return (
             <div className="member" key = {member.id}>
-            <h2>{member.name}</h2>
-            <h3>{member.email}</h3>
-            <p>{member.role}</p>
+            <h2>{member.Name}</h2>
+            <h3>{member.Email}</h3>
+            <p>{member.Role}</p>
             </div>
         );
     })}
